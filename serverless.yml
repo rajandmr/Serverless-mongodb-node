@@ -27,7 +27,6 @@ provider:
   deploymentBucket: ${self:custom.deploymentBucket.${self:provider.stage}}
   environment:
     DB_CONN_STRING: ${env:DB_CONN_STRING}
-    FOO: ${env:FOO}
 
 functions:
   - ${file(src/functions/user/index.yml)}
