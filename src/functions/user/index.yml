@@ -1,0 +1,39 @@
+createUser:
+  handler: src/functions/user/createUser.main
+  events:
+    - http:
+        path: createUser
+        method: POST
+        cors: true
+
+getAllUsers:
+  handler: src/functions/user/getAllUsers.main
+  events:
+    - http:
+        path: getAllUsers
+        method: GET
+        cors: true
+
+getUserById:
+  handler: src/functions/user/getUserById.main
+  events:
+    - http:
+        path: getUserById
+        method: GET
+        cors: true
+
+editUser:
+  handler: src/functions/user/editUser.main
+  events:
+    - http:
+        path: editUser
+        method: PUT
+        cors: true
+
+deleteUser:
+  handler: src/functions/user/deleteUser.main
+  events:
+    - http:
+        path: deleteUser
+        method: DELETE
+        cors: true
